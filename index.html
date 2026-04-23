@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Ein kleines Geburtstagsraetsel fuer Emma."
+    />
+    <title>Emma | Brief 18</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__photo" aria-hidden="true">
+          <div class="paper-stack paper-stack--one"></div>
+          <div class="paper-stack paper-stack--two"></div>
+          <div class="seal">18</div>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Fuer Emma</p>
+          <h1 id="page-title">Ein Brief, der kurz den Umweg nimmt.</h1>
+          <p class="lede">
+            Drei kleine Fragen, dann oeffnet sich der Geburtstagsbrief.
+          </p>
+          <button class="start-button" type="button" data-start>
+            Raetsel starten
+          </button>
+        </div>
+      </section>
+
+      <section class="riddle-section" aria-labelledby="riddle-title">
+        <div class="riddle-panel" data-riddle-panel>
+          <div class="progress" aria-label="Fortschritt">
+            <span class="progress__dot is-active"></span>
+            <span class="progress__dot"></span>
+            <span class="progress__dot"></span>
+          </div>
+
+          <p class="step-label" data-step-label>Frage 1 von 3</p>
+          <h2 id="riddle-title" data-question>
+            Welche Zahl ist heute wichtiger als alle anderen?
+          </h2>
+          <p class="hint" data-hint>
+            Tipp: So viele Briefe sollten am Ende zusammenkommen.
+          </p>
+
+          <form class="answer-form" data-answer-form>
+            <label class="sr-only" for="answer">Antwort</label>
+            <input
+              id="answer"
+              autocomplete="off"
+              data-answer
+              placeholder="Antwort eingeben"
+              type="text"
+            />
+            <button type="submit">Pruefen</button>
+          </form>
+
+          <p class="feedback" data-feedback aria-live="polite"></p>
+          <button class="skip-button" type="button" data-kind-unlock hidden>
+            Ich bin grosszuegig und will den Brief lesen
+          </button>
+        </div>
+      </section>
+
+      <section class="letter-section" data-letter-section hidden>
+        <article class="letter" aria-labelledby="letter-title">
+          <p class="letter__kicker">Geoeffnet</p>
+          <h2 id="letter-title">Liebe Emma,</h2>
+          <div class="letter__body">
+            <p>
+              ich habe es geschafft, einen Brief, der eigentlich ganz normal
+              bei deiner kleinen Schwester landen sollte, in ein kleines
+              Raetsel zu verwandeln. Das ist nicht die eleganteste Form von
+              Puenktlichkeit, aber immerhin sehr ich.
+            </p>
+            <p>
+              Was ich dir eigentlich sagen will: Ich bin sehr froh, dich in
+              meinem Leben zu haben. Du machst Raeume leichter, Gespraeche
+              echter und Tage besser, ohne daraus eine grosse Sache zu machen.
+            </p>
+            <p>
+              Fuer dein neues Lebensjahr wuensche ich dir Menschen, bei denen
+              du dich nicht erklaeren musst, Plaene, die dich wirklich
+              gluecklich machen, und ganz viele Momente, in denen du merkst,
+              wie geliebt du bist.
+            </p>
+            <p>
+              Alles Liebe zum Geburtstag. Der echte Brief ist vielleicht
+              digital angekommen, aber er ist trotzdem ernst gemeint.
+            </p>
+          </div>
+          <p class="signature">Dein nicht ganz puenktlicher Freund</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
