@@ -1,18 +1,18 @@
 const riddles = [
   {
-    question: "Welche Zahl ist heute wichtiger als alle anderen?",
-    hint: "Tipp: So viele Briefe sollten am Ende zusammenkommen.",
+    question: "Platzhalterfrage 1",
+    hint: "Testantwort: 18",
     answers: ["18", "achtzehn"],
   },
   {
-    question: "Wer darf diesen Brief am Ende lesen?",
-    hint: "Tipp: Der Name steht ziemlich prominent auf dieser Seite.",
+    question: "Platzhalterfrage 2",
+    hint: "Testantwort: emma",
     answers: ["emma"],
   },
   {
-    question: "Was wurde aus einem zu spaeten Brief?",
-    hint: "Tipp: Das deutsche Wort dafuer steht im ersten Bildschirm.",
-    answers: ["raetsel", "rätsel", "riddle"],
+    question: "Platzhalterfrage 3",
+    hint: "Testantwort: brief",
+    answers: ["brief"],
   },
 ];
 
@@ -61,7 +61,7 @@ function revealLetter() {
   letterSection.hidden = false;
   form.hidden = true;
   kindUnlock.hidden = true;
-  feedback.textContent = "Geschafft. Der Brief ist offen.";
+  feedback.textContent = "Demo fertig.";
   letterSection.scrollIntoView({ behavior: "smooth", block: "start" });
 
   window.setTimeout(() => {
@@ -78,8 +78,8 @@ function checkAnswer(value) {
     state.misses += 1;
     feedback.textContent =
       state.misses < 3
-        ? "Noch nicht ganz. Der Tipp hilft wirklich."
-        : "Fast. Und falls der Geburtstag wichtiger ist als das Raetsel: unten gibt es den netten Ausgang.";
+        ? "Noch nicht ganz."
+        : "Du kannst die Demo auch direkt entsperren.";
     if (state.misses >= 3) {
       kindUnlock.hidden = false;
     }
@@ -87,7 +87,7 @@ function checkAnswer(value) {
   }
 
   state.step += 1;
-  feedback.textContent = "Richtig.";
+  feedback.textContent = "Weiter.";
 
   if (state.step >= riddles.length) {
     revealLetter();

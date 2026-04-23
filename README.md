@@ -1,13 +1,21 @@
 # Emma Birthday Riddle
 
-Static site for a QR-code birthday letter. It works on GitHub Pages, Netlify,
-Vercel, or any basic web host.
+Static mock-up for a QR-code birthday riddle. It works on Vercel, GitHub Pages,
+Netlify, or any basic web host.
 
 ## Edit quickly
 
-- Change the letter in `index.html` inside `.letter__body`.
+- Change the placeholder letter in `index.html` inside `.letter__body`.
 - Change the riddles and accepted answers at the top of `script.js`.
 - The page has `noindex` metadata so search engines should not index it.
+
+## Deploy on Vercel
+
+1. Import `bolasse1234/emma-birthday-riddle` in Vercel.
+2. Framework preset: `Other`.
+3. Build command: leave empty.
+4. Output directory: leave empty.
+5. Deploy.
 
 ## Publish with GitHub Pages
 
